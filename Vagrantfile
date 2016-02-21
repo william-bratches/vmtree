@@ -50,6 +50,17 @@ Vagrant.configure(2) do |config|
   #   # Customize the amount of memory on the VM:
      vb.memory = "2048"
    end
+
+  # attach a disk image
+
+  #file_to_disk = 'disk/steamDisk.vdi'
+
+  #Vagrant::Config.run do |config|
+  #  config.vm.box = 'base'
+
+  #  config.vm.customize ['createhd', '--filename', file_to_disk, '--size', 14 * 1024]
+  #  config.vm.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file_to_disk]
+  #end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
